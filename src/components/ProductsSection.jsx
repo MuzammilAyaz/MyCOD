@@ -14,7 +14,7 @@ const ProductsSection = () => {
         },
         {
             id: 2,
-            title: 'Functional Mushroom Powder (100g)',
+            title: 'Fortified Mushroom Powder (100g)',
             subtitle: 'Mushroom-Derived Vitamin D',
             image: '/images/product-powder.png',
             price: '€16.50',

@@ -18,6 +18,7 @@ const Header = () => {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
         <a href="#" className="logo">
+          <img src="/icon.png" alt="MyCOD Logo" className="logo-img" />
           MYCOD<span className="logo-dot">.</span>
         </a>
         <nav className="nav">
