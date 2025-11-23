@@ -1,0 +1,13 @@
+.products-section {
+    background-color: var(--color-bg-alt);
+}
+
+.section-title {
+    color: var(--color-text);
+}
+
+.section-subtitle {
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}

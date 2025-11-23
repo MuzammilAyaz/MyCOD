@@ -1,0 +1,159 @@
+:root {
+  /* Refined Forest Light Theme Palette */
+  --color-bg: #E8F5E9;
+  /* Soft Sage/Mist Green - Calming base */
+  --color-bg-alt: #C8E6C9;
+  /* Pale Green for subtle depth */
+  --color-text: #1B5E20;
+  /* Deep Forest Green for elegance */
+  --color-text-light: #33691E;
+  /* Muted olive green */
+
+  --color-primary: #2E7D32;
+  /* Classic Forest Green */
+  --color-primary-hover: #1B5E20;
+
+  --color-secondary: #5D4037;
+  /* Dark Earth Brown */
+  --color-accent: #FFD54F;
+  /* Soft Sunlight Yellow */
+
+  --color-border: #A5D6A7;
+  /* Soft green border */
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 2px 8px rgba(27, 94, 32, 0.05);
+  --shadow-md: 0 8px 24px rgba(27, 94, 32, 0.08);
+  --shadow-lg: 0 16px 48px rgba(27, 94, 32, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: var(--spacing-lg) 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+/* Chunky Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: none !important;
+}
+
+.btn-primary {
+  background-color: #4A4036;
+  /* Restoring user's preferred button color */
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #4A4036;
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-text);
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-md {
+  margin-bottom: var(--spacing-md);
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
